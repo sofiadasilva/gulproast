@@ -1,0 +1,253 @@
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
+/* make images flexible */
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #59331d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 12px solid #d98555;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 200px;
+
+}
+
+/* flex basis on the image container, li */
+nav .links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: #d98555;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    flex-basis: 73%;
+}
+
+figure {
+    margin: 3rem 0 0 0;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact figure {
+    height: 200px;
+    overflow: hidden;
+}
+
+.contact img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.products p {
+    font-size: 1.1rem;
+}
+
+.products figure {
+    margin-top: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+
+footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+}
+
+@media screen and (min-width: 641px) {
+    header {
+        border-bottom: 10px solid #d98555;
+    }
+
+    nav .links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-bottom: 28px;
+    }
+
+    .main {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contact {
+        align-items: center;
+    }
+
+    .contact figure {
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .product-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 1008px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 40px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .home {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .product-container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .flip {
+        flex-direction: column-reverse;
+    }
+}
